@@ -1,0 +1,34 @@
+Alumnos:
+ 		Denylson Romero, 13-11270.
+		Jawil Ricauter, 13-11199.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////     Proyecto No. 1 | Sistemas Operativos I        ///////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Nuestro programa esta organizado de la siguiente manera:
+	- Un archivo header llamado funciones.h que contiene las firmas y definiciones de 
+	  funciones.c
+	- Dos archivos con extension .c, uno llamado funciones.c donde se almacenan todas las 
+	  funciones requeridas para la ejecucion del programa, obligatorias y auxiliares, y 
+	  otro llamado main.c que contiene las llamadas a las funciones requeridas.
+	- Un archivo Makefile que es el encargado de la compilacion y produccion del 
+	  ejecutable els.
+
+
+
+
+Asimismo, cabe destacar, que la estructura utilizada para llevar a cabo el contador de la 
+cantidad de archivos y tamanio total de estos fue una clonacion de procesos con la llamada al
+sistema fork() para cada subcarpeta de donde esta siendo ejecutado el proceso els. Estos 
+procesos hijos generan reportes de ellos mismos y retornan la informacion al padre sobre la 
+cantidad de archivos y tamanio en bytes total a traves de pipes no nominales. Ademas, tanto 
+el proceso padre como los hijos, revisan si existen archivos "core", y procede a eliminarlos
+(si se tienen los permisos) y dar informacion sobre estos en el respectivo reporte del proceso
+que lo encontro. El reporte del proceso padre y de los hijos son creados en el directorio /tmp/
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////

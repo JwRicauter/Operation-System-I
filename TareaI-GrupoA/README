@@ -1,0 +1,32 @@
+Alumnos:
+ 		Denylson Romero, 13-11270.
+		Jawil Ricauter, 13,11199.
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////     Tarea No. 1 | Sistemas Operativos I        /////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Nuestro programa esta organizado de la siguiente manera:
+	- Un archivo header llamado funciones.h que contiene las firmas y definiciones de 
+	  funciones.c
+	- Dos archivos con extension .c, uno llamado funciones.c donde se almacenan todas las 
+	  funciones requeridas para la ejecucion del programa, obligatorias y auxiliares, y 
+	  otro llamado main.c que contiene las llamadas a las funciones requeridas.
+	- Un archivo Makefile que es el encargado de la compilacion y produccion del 
+	  ejecutable pscheduler.
+
+
+Asimismo, cabe destacar, que la estructura utilizada para llevar a cabo la produccion del
+planificador de procesos fue una lista simplemente enlazada. No se procedió a la realizacion
+de una cola, puesto a que ella es una estructura LIFO (Last In First Out) y ya que
+necesitabamos en ciertas ocasiones eliminar procesos que no estaban en la cabecera, 
+entonces se procedió a la realización de una Lista simplemente enlazada en vez de una cola.
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
